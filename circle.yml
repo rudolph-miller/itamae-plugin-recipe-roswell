@@ -12,10 +12,3 @@ test:
   override:
     - gem install diff-lcs -v '1.2.5'
     - bundle exec rake spec
-
-deployment:
-  hub: 
-    branch: master
-    commands:
-      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push somewrite/base
