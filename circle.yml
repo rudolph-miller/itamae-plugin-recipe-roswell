@@ -1,4 +1,4 @@
-jachine:
+machine:
   services:
     - docker
 
